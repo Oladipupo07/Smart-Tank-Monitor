@@ -9,13 +9,13 @@
 char ssid[] = "Wokwi-GUEST";
 char pass[] = "";
 
-#define TRIG_PIN 5
-#define ECHO_PIN 18
+#define TRIG_PIN 41
+#define ECHO_PIN 40
 #define LED_LOW 16
-#define LED_MED 17
-#define LED_HIGH 19
+#define LED_MED 15   
+#define LED_HIGH 14
 #define BUZZER 21
-#define RELAY_PIN 23
+#define RELAY_PIN 26
 
 const int tankHeight = 100; // cm
 long duration;
