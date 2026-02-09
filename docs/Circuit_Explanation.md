@@ -15,8 +15,8 @@ The ultrasonic sensor measures the distance between the water surface and the to
 |------------|------------|
 | VCC | 5V |
 | GND | GND |
-| TRIG | GPIO 5 |
-| ECHO | GPIO 18 |
+| TRIG | GPIO 41 |
+| ECHO | GPIO 40 |
 
 ---
 
@@ -38,7 +38,7 @@ The relay module controls the water pump.
 
 | Relay Pin | ESP32 Pin |
 |------------|------------|
-| IN | GPIO 23 |
+| IN | GPIO 26 |
 | VCC | 5V |
 | GND | GND |
 
@@ -60,9 +60,9 @@ Three LEDs provide visual tank water level indication.
 
 | LED | ESP32 Pin | Function |
 |------|------------|-------------|
-| Red LED | GPIO 14 | Low Water Level |
-| Yellow LED | GPIO 12 | Medium Water Level |
-| Green LED | GPIO 13 | High Water Level |
+| Red LED | GPIO 16 | Low Water Level |
+| Yellow LED | GPIO 15 | Medium Water Level |
+| Green LED | GPIO 14 | High Water Level |
 
 Each LED is connected through a 220Ω resistor to limit current and protect the LED.
 
