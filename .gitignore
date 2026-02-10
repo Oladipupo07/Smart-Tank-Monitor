@@ -1,0 +1,22 @@
+# Arduino Temporary Files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build Files
+*.elf
+*.hex
+
+# VS Code
+.vscode/
+
+# PlatformIO
+.pio/
+
+# Node modules
+node_modules/
