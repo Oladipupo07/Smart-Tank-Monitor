@@ -1,0 +1,10 @@
+ESP32 Smart Water Tank Monitoring Simulation
+
+Wokwi Project Link:
+https://wokwi.com/projects/455164338725670913
+
+Instructions:
+1. Open the link above
+2. Run simulation
+3. Adjust tank level distance
+4. Observe LED indicators and pump control
