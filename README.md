@@ -8,26 +8,38 @@
 ---
 
 ## 📌 Project Overview
+This project presents the design and simulation of an IoT-based Smart Water Tank Monitoring and Automatic Pump Control System using the ESP32 microcontroller. The system monitors water levels in a tank and automatically controls a water pump to prevent overflow and dry running.
 
-The **ESP32 Smart Water Tank Monitoring System** is an IoT-based embedded system that monitors water level in a tank and automatically controls a water pump. The system also sends real-time alerts to a smartphone using the Blynk IoT platform.
+The project integrates embedded systems and IoT technology to provide real-time monitoring and remote alerts using the Blynk platform.
+**ESP32 Smart Water Tank Monitoring System** is an IoT-based embedded system that monitors water level in a tank and automatically controls a water pump. The system also sends real-time alerts to a smartphone using the Blynk IoT platform.
 
-This project helps solve common water management problems such as:
-
-- Pump overuse  
-- Water wastage  
-- Manual tank monitoring  
-- Sudden tank overflow  
+## 🎯 Objectives
+- Monitor water tank levels (Low, Medium, High)
+- Automatically control pump operation
+- Prevent water overflow and pump damage
+- Provide real-time alerts via smartphone
+- Demonstrate IoT integration using ESP32
 
 ---
 
-## ⭐ Key Features
+## ⚙️ System Features
+✅ Automatic pump control using relay  
+✅ Water level monitoring using ultrasonic sensor  
+✅ Visual level indicators using LEDs  
+✅ Smartphone alert notifications using Blynk IoT  
+✅ Serial monitor debugging support  
+✅ Wokwi simulation ready  
+✅ Scalable for real-life implementation  
 
-✅ Real-time water level monitoring  
-✅ Automatic pump control  
-✅ Smartphone notification using Blynk  
-✅ Serial monitor debugging system  
-✅ Wokwi simulation supported  
-✅ Energy efficient design  
+---
+
+## 🧠 System Architecture
+The ESP32 reads water level data from sensors and determines the tank condition. Based on the level, it:
+
+- Turns ON pump when water level is LOW
+- Turns OFF pump when tank is FULL
+- Displays tank status using LEDs
+- Sends alerts to smartphone via Blynk
 
 ---
 
@@ -37,8 +49,8 @@ This project helps solve common water management problems such as:
 |-----------|-------------|
 | ESP32 | Main microcontroller |
 | HC-SR04 Ultrasonic Sensor | Water level measurement |
-| LED (3) | Light up according to water level |
-| Resistors (3) | Resists the current going through the LED |
+|3 LEDs (Low, Medium, High indicators) | Light up according to water level |
+| Resistors| Resists the current going through the LED |
 | Relay Module | Pump switching control |
 | Water Pump (Simulated) | Water refill system |
 | Breadboard & Wires | Circuit connection |
@@ -95,15 +107,15 @@ Water Level Sensor → ESP32 → Relay Control → Pump → Blynk App
 - VCC → 5V  
 - GND → GND
 - 
-### LED (Red) → Resistor → ESP32
+### Low Level LED → Resistor → ESP32
 - IN → Resistor (220 Ohms) →  16
 - Anode → GND
 
-### LED (White) → Resistor → ESP32
+### Mid Level LED → Resistor → ESP32
 - Cathode → Resistor (220 Ohms) →  15
 - Anode → GND
 
-### LED (Green) → Resistor → ESP32
+### High Level LED → Resistor → ESP32
 - Cathode → Resistor (220 Ohms) →  14
 - Anode → GND
 ---
@@ -121,33 +133,14 @@ Water Level Sensor → ESP32 → Relay Control → Pump → Blynk App
 git clone https://github.com/YOUR_USERNAME/ESP32-Smart-Tank-Monitor.git
 ```
 
-## 📈 Engineering Applications
+## 📄 Documentation
 
-1. Smart homes
-
-2. Water supply systems
-
-3. Industrial water monitoring
-
-4. Agricultural irrigation control
-
+- 📘 Project Report → docs/Project_Report.pdf
+- 🔍 Circuit Explanation → docs/Circuit_Explanation.md
+- 🧩 System Design → docs/System_Design.md
 ---
 
-## 🔮 Future Improvements
-
-1. OLED display integration
-
-2. GSM SMS alert system
-
-3. Water flow monitoring
-
-4. Cloud data logging
-
-5. Solar powered operation
-
----
-
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Oladipupo Akobe
 B.Eng Computer Engineering Student
