@@ -130,7 +130,7 @@ Water Level Sensor → ESP32 → Relay Control → Pump → Blynk App
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ESP32-Smart-Tank-Monitor.git
+git clone https://github.com/Oladipupo07/Smart-Tank-Monitor.git
 ```
 
 ## 📄 Documentation
